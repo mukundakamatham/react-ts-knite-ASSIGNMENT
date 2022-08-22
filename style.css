@@ -1,0 +1,36 @@
+h1,
+p {
+  font-family: Lato;
+}
+.chessboard {
+  width: 450px;
+  height: 450px;
+  border-style: solid;
+  font-size: 20px;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.chessboard > div {
+  height: 11.11%;
+}
+
+.chessboard > div > div {
+  width: 11.11%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.chessboard > div:nth-child(odd) > div:nth-child(even),
+.chessboard > div:nth-child(even) > div:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: aqua;
+}
+.possible {
+  background-color: rgb(255, 217, 0) !important;
+}
