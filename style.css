@@ -29,7 +29,7 @@ p {
 }
 
 .active {
-  background-color: aqua;
+  background-color: aqua !important;
 }
 .possible {
   background-color: rgb(255, 217, 0) !important;
